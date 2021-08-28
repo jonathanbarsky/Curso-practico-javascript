@@ -49,7 +49,51 @@ function areaTriangulo(altura, base) {
 }
 //console.log("El área del triangulo es: " + areaTriangulo + "cm^2");
 
+function perimetroTriIsosceles(lado1, lado2, base){
+    if(lado1 === lado2) {
+        return (lado1 + lado2 + base);
+    }
+    else() {
+        return alert("No es un triangulo Isosceles")
+    }
+}
 
+function areaTriIsosceles(altura, base, lado1, lado2 ) {
+    if(lado1 === lado2) {
+        return (altura * base) / 2;
+    }
+    else() {
+        return alert("No es un triangulo Isosceles")
+    }
+}
+
+function altTriIsosceles(lado1, lado2, base) {
+    if(lado1 === lado2) {
+
+    }
+}
+
+//solucion de la altura triangulo
+
+
+function alturaTraianguloIsosceles(trianguloGrandeLadoA, trianguloGrandeLadoB, trianguloGrandeBase) {
+    if(trianguloGrandeLadoA != trianguloGrandeLadoB) {
+        console.error("Los lados a y b no son iguales")
+    }else {
+        let trianguloPequeñoLadoA; //pendiente
+        const trianguloPequeñoLadoB = trianguloGrandeBase / 2;
+        const trianguloPequeñoLadoBase = trianguloGrandeLadoA;
+
+        const trianguloPequeñoLadoBCuadrado = trianguloPequeñoLadoB * trianguloPequeñoLadoB;
+
+        const trianguloPequeñoBaseCuadrado = trianguloPequeñoBase * trianguloPequeñoBase;
+
+        const trianguloPequeñoLadoA = math.sqrt(trianguloPequeñoBaseCuadrado - trianguloPequeñoLadoBCuadrado);
+
+        const trianguloGrandeAltura = trianguloPequeñoLadoA;
+        return trianguloGrandeAltura;
+    }
+}
 console.groupEnd();
 
 // codigo del circulo
