@@ -10,13 +10,22 @@ function calcularPrecioConDescuento(precio, descuento) {
 
 }
 
-const coupons = {
-    "JuanDC_es_Batman",
-    "pero_no_se_lo_digas_a_nadie",
-    "es_un_secreto",
-}
+const coupons = "[
+    {
+    name: "JuanDC_es_Batman",
+    discount: 15, 
+    },
+    {
+    name: "pero_no_se_lo_digas_a_nadie",
+    discount: 30,
+    },
+    {
+    name: "es_un_secreto",
+    discoun: 25,
+    }
+]"
 
-function onClickButtonPriceDiscount(onCl) {
+function onClickButtonPriceDiscount() {
     const inputPrice = document.getElementById("InputPrice");
     const priceValue = inputPrice.value;    
 
