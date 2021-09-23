@@ -10,7 +10,7 @@ function calcularPrecioConDescuento(precio, descuento) {
 
 }
 
-const coupons = "[
+const coupons = [
     {
     name: "JuanDC_es_Batman",
     discount: 15, 
@@ -23,7 +23,7 @@ const coupons = "[
     name: "es_un_secreto",
     discoun: 25,
     }
-]"
+]
 
 const isCouponValueValid = function(coupon) {
     return coupon.name === couponValue;
